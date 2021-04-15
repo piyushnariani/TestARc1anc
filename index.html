@@ -49,7 +49,7 @@
                 ></video>
             </a-assets>
 
-            <a-marker
+<!--             <a-marker
                 type="pattern"
                 preset="custom"
                 url="assets/marker.patt"
@@ -62,7 +62,16 @@
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="markerA"
-            >
+            > -->
+            
+            <a-nft
+                type="nft"
+                url="assets/NB_Stckd_logo_PMS_186"
+                smooth="true"
+                smoothCount="10"
+                smoothTolerance=".01"
+                smoothThreshold="5"
+             >
                 <a-video
                     src="#vid"
                     scale="1 1 1"
@@ -71,7 +80,7 @@
                     class="clickable"
                     gesture-handler
                 ></a-video>
-            </a-marker>
+            </a-nft>
 
             <a-entity camera></a-entity>
         </a-scene>
